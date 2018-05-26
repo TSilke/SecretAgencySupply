@@ -1,0 +1,207 @@
+/**Universal Styles**/
+html {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+}
+
+main {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+
+#products .flex-container {
+  background-color: firebrick;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  width: 960px;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  align-items: center;
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+/**Header**/
+.title-header {
+  font-family: Helvetica, sans-serif;
+  font size: 1rem;
+  justify-content: flex-start;
+}
+
+#title {
+  background-color: black;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  width: 960px;
+}
+
+#header {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/logo.png");
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+}
+
+#logo .flex-container {
+  align-items; center;
+  justify-content: flex-start;
+  margin: 100%;
+}
+
+/**Banner**/
+.banner-container {
+  display: flex;
+
+
+}
+
+.banner-title {
+  display: flex;
+  flex-flow: column;
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+}
+
+#banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  height: 25rem;
+  width: 960px;
+}
+
+#new-arrival {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+#sport-bikes {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/**Navigation**/
+#product-list {
+  display: flex;
+  background-color: firebrick;
+  width: 960px;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+/**Product Container**/
+.container {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: flex-end;
+  height: 13rem;
+  border: 4px solid black;
+  margin-right: 2rem;
+}
+
+.container2 {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 3rem;
+
+}
+.images {
+  display: flex;
+  height: 13rem;
+  width: 10rem;
+  background-size: 9rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+}
+
+/**Stock Photos**/
+#pen {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/pen.png");
+}
+
+#watch {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/watch.png");
+}
+
+#glasses {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/glasses.png");
+}
+
+/**Location and Hours Container**/
+.info-container {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 35%;
+  justify-content: space-between;
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  background-color: transparent;
+  padding-bottom: 4rem;
+}
+
+/**Footer**/
+
+
+.footer-container {
+  display: flex;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  width: 960px;
+  height: 5rem;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+}
