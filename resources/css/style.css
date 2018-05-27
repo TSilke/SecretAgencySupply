@@ -1,11 +1,14 @@
 /**Universal Styles**/
 html {
   font-size: 18px;
-  margin: 0;
   padding: 0;
-
+  height: auto;
+  width: 100%;
 }
-
+html, body {
+  margin: auto;
+  max-width: 100%;
+}
 header {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
@@ -23,7 +26,6 @@ body {
   font-size: 18px;
 }
 
-
 #products .flex-container {
   background-color: firebrick;
 }
@@ -31,19 +33,79 @@ body {
 .flex-container {
   display: flex;
   align-items: center;
-  width: 960px;
+  max-width: 100%;
+  overflow: hidden;
   justify-content: center;
   justify-content: space-between;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .logo-container {
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
   align-items: center;
+  overflow: hidden;
+}
+/**Media Queries**/
+
+/**Screens less than width of 1024**/
+@media only screen and (max-width: 1024) {
+  .container {
+    width: 47%;
+    }
+  .container3 {
+    width: 35%;
+    }
+}
+/** Desktop**/
+@media only screen and (min-width: 1600px) {
+
 }
 
-@media only screen and (max-width: 960px) {
+/**Less than 470px**/
+@media only screen and (max-width: 470px) {
+  #new-arrival {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    }
 
+  #sport-bikes {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    }
+
+  .banner-title {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 10rem;
+    padding-left: 2rem;
+    }
+
+  .footer-container {
+    width: auto;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    }
+
+  .container3 {
+    width: 90%;
+    }
+
+  .container {
+      width: 90%;
+    }
+
+  #product-list {
+      width: 100%;
+      margin-top: 15rem;
+    }
 }
 /**Header**/
 .title-header {
@@ -56,32 +118,26 @@ body {
   background-color: black;
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
-  width: 960px;
+
 }
 
 #header {
   background-position: center;
   background-size: cover;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/logo.png");
+  background-repeat: no-repeat;
   height: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 1rem;
-  background-repeat: no-repeat;
 }
 
 #logo .flex-container {
   align-items; center;
   justify-content: flex-start;
-  margin: 100%;
+
 }
 
 /**Banner**/
-.banner-container {
-  display: flex;
-
-
-}
-
 .banner-title {
   display: flex;
   flex-flow: column;
@@ -97,7 +153,8 @@ body {
   background-repeat: no-repeat;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   height: 25rem;
-  width: 960px;
+  width: 100%;
+  overflow: hidden;
 }
 
 #new-arrival {
@@ -116,12 +173,13 @@ body {
 #product-list {
   display: flex;
   background-color: firebrick;
-  width: 960px;
   color: white;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   justify-content: space-around;
   margin-bottom: 3rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 /**Product Container**/
@@ -129,10 +187,8 @@ body {
   display: flex;
   width: 30%;
   justify-content: center;
-  align-items: flex-end;
   height: 13rem;
   border: 4px solid black;
-  margin-right: 2rem;
 }
 
 .container2 {
@@ -141,21 +197,23 @@ body {
   justify-content: center;
   background-color: black;
   color: white;
-  margin-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 3rem;
-
+  max-width: 100%;
+  overflow: hidden;
 }
 .images {
-  display: flex;
   height: 13rem;
   width: 10rem;
   background-size: 9rem;
+  background-size: cover;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: space-between;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 /**Stock Photos**/
