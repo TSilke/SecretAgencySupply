@@ -3,12 +3,10 @@ html {
   font-size: 18px;
   padding: 0;
   height: auto;
-  width: 100%;
 }
-html, body {
-  margin: auto;
-  max-width: 100%;
-}
+
+
+
 header {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
@@ -37,6 +35,7 @@ body {
   overflow: hidden;
   justify-content: center;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .logo-container img {
@@ -50,63 +49,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
-/**Media Queries**/
 
-/**Screens less than width of 1024**/
-@media only screen and (max-width: 1024) {
-  .container {
-    width: 47%;
-    }
-  .container3 {
-    width: 35%;
-    }
-}
-/** Desktop**/
-@media only screen and (min-width: 1600px) {
-
-}
-
-/**Less than 470px**/
-@media only screen and (max-width: 470px) {
-  #new-arrival {
-    font-family: Helvetica;
-    font-size: 0.77rem;
-    font-weight: bold;
-    }
-
-  #sport-bikes {
-    font-family: Helvetica;
-    font-size: 1rem;
-    font-weight: bold;
-    }
-
-  .banner-title {
-    width: 100%;
-    padding: 1rem;
-    margin-top: 10rem;
-    padding-left: 2rem;
-    }
-
-  .footer-container {
-    width: auto;
-    height: 5rem;
-    align-items: center;
-    justify-content: center;
-    }
-
-  .container3 {
-    width: 90%;
-    }
-
-  .container {
-      width: 90%;
-    }
-
-  #product-list {
-      width: 100%;
-      margin-top: 15rem;
-    }
-}
 /**Header**/
 .title-header {
   font-family: Helvetica, sans-serif;
@@ -118,7 +61,6 @@ body {
   background-color: black;
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
-
 }
 
 #header {
@@ -129,12 +71,13 @@ body {
   height: 1.5rem;
   margin-left: 0.5rem;
   margin-right: 1rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 #logo .flex-container {
   align-items; center;
   justify-content: flex-start;
-
 }
 
 /**Banner**/
@@ -182,9 +125,16 @@ body {
   overflow: hidden;
 }
 
+.mobile-navigation {
+  display: none;
+}
 /**Product Container**/
-.container {
+
+.container, .container2 {
   display: flex;
+}
+
+.container {
   width: 30%;
   justify-content: center;
   height: 13rem;
@@ -192,26 +142,24 @@ body {
 }
 
 .container2 {
-  display: flex;
   width: 30%;
   justify-content: center;
+  align-items: center;
   background-color: black;
   color: white;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 3rem;
-  max-width: 100%;
-  overflow: hidden;
 }
+
 .images {
+  align-items: center;
   height: 13rem;
-  width: 10rem;
-  background-size: 9rem;
+  width: 9rem;
   background-size: cover;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  justify-content: space-between;
   overflow: hidden;
   max-width: 100%;
 }
@@ -262,4 +210,68 @@ body {
   color: white;
   align-items: center;
   justify-content: flex-start;
+}
+
+/**Media Queries**/
+
+/**Screens less than width of 1024**/
+@media only screen and (max-width: 1024) {
+  .container {
+    width: 47%;
+    }
+  .container3 {
+    width: 35%;
+    }
+
+}
+/** Desktop**/
+@media only screen and (min-width: 1600px) {
+
+}
+
+/**Less than 470px**/
+@media only screen and (max-width: 470px) {
+  #new-arrival {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    }
+
+  #sport-bikes {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    }
+
+  .banner-title {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 10rem;
+    padding-left: 2rem;
+    }
+
+  .footer-container {
+    width: auto;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    }
+
+  .container3 {
+    width: 90%;
+    }
+
+  .container {
+      width: 90%;
+    }
+
+  #product-list {
+      width: 100%;
+      margin-top: 15rem;
+    }
+
+  .mobile-navigation {
+    display: block;
+    text-align: center;
+    }
 }
